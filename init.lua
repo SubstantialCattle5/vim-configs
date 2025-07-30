@@ -1,10 +1,13 @@
--- Set basic options
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.expandtab = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.mouse = 'a'
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.wrap = false
+vim.o.tabstop = 4 
+vim.o.swapfile = false 
+vim.g.mapleader = " "
 
--- Example of a simple keybinding
-vim.keymap.set('n', '<leader>w', ':w<CR>', { desc = 'Save File' })
+
+vim.keymap.set('n' , '<leader>o', ':update<CR> :source<CR>') 
+vim.keymap.set('n' , '<leader>w', ':write<CR>') 
+vim.keymap.set('n' , '<leader>q', ':quit<CR>') 
+
+
